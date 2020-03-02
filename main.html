@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Convertor and Interest Calculator</title>
+    <style>
+        body {background-color: aliceblue;}
+        body   {color: #2f4f4f;}
+        p {
+            overflow-x: -webkit-marquee;
+            -webkit-marquee-style: alternate;
+        }
+    </style>
+    <script type="text/javascript" src="Functionality.js"></script>
+</head>
+<body>
+<img src="currency-banner.jpg">
+
+<br>
+<h1> Module 1: Currency Convertor </h1>
+<br>
+
+Please pick your currency and enter the value, to get converted:
+    <select name="SrcCurrencies" id="src">
+        <name>Currency</name>
+        <option value="dollar"  selected="selected">Dollar</option>
+        <option value="pound">Pound</option>
+        <option value="rupee">INR</option>
+        <option value="yen">Yen</option>
+    </select>
+    <input type="number" id="cur_data">
+    <br>
+Please pick your desired currency:
+    <select name="DestCurrencies" id="dest">
+
+        <option selected="selected"  value="rupee">INR</option>
+        <option value="yen">Yen</option>
+        <option value="dollar">Dollar</option>
+        <option value="pound">Pound</option>
+    </select>
+<br>
+    <input type="button" about="Convert" aria-valuetext="Convert" value="Convert" onclick="CalcCurrency()">
+
+    <!-- script work goes here-->
+
+<br><br><br><h1> Module 2: Interest Calculator </h1>
+
+    &nbsp; Please enter your Principal Amount($) lended: <input type=number id="pr" value="1"><br>
+    &nbsp; Please enter the tenure: <input type=number id="te" value="1"><br>
+    &nbsp; Enter the interest: <input type=number id="rate" value="0">&nbsp;
+     <select name="rate" id="Ttype" >
+        <option selected="selected" value="i1">Yearly</option>
+        <option value="i4">Quarter-Yearly</option>
+        <option value="i2">Half-Yearly</option>
+    </select><br>
+    &nbsp; Pick the Type of interest:
+<select name="iType" id="iType" >
+    <option selected="selected" id="s">Simple</option>
+    <option id="Comp">Compound</option>
+</select>    <br><br>
+<input type="button" about="Calculate" aria-valuetext="Calculate" value="Calculate" onclick="CalcInterest()">
+
+<br><br><br><br>
+<p>Thanks for Visiting, See you again!</p>
+</body>
+</html>
